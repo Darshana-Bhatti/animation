@@ -1,0 +1,15 @@
+h2{
+    font-weight: 140;
+    font-size: clamp(2rem, 4vw+1rem, 6rem);
+    background: linerar-gradient(hsl(0 0% 50%),hsl(0 0% 20%));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-animation: scale-down linear both;
+    animation:scale-down linear both;
+    animation-timeline: scroll();
+    animation-range: 0 50vh;
+}
+@-webkit-keyframes scale-down{
+    to{scale: 0.75;}
+}
